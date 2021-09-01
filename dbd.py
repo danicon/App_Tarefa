@@ -30,7 +30,7 @@ def deletar(i):
 def atualizar(i):
     with con:
         cur = con.cursor()
-        query = "UPDATE tarefa SET nome='Comer' WHERE id=3 "
+        query = "UPDATE tarefa SET nome=? WHERE id=? "
         cur.execute(query, i)    
 
 
